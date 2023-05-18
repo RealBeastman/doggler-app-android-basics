@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class com.example.dogglers.GridListTests</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.example.dogglers.GridListTests</h1>
+<div class="breadcrumbs">
+<a href="index.html">all</a> &gt; 
+<a href="com.example.dogglers.html">com.example.dogglers</a> &gt; GridListTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.058s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">80%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="vertical_scrolling"></a>
+<h3 class="failures">vertical_scrolling</h3>
+<span class="code">
+<pre>androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: '(view has effective visibility &lt;VISIBLE&gt; and view.getGlobalVisibleRect() to return non-empty rectangle)' doesn't match the selected view.
+Expected: (view has effective visibility &lt;VISIBLE&gt; and view.getGlobalVisibleRect() to return non-empty rectangle)
+Got: view.getGlobalVisibleRect() returned empty rectangle
+View Details: MaterialTextView{id=2131230886, res-name=dog_name_textview, visibility=VISIBLE, width=183, height=132, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@9c256c4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=679.0, text=Bella, input-type=0, ime-target=false, has-links=false}
+
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1841)
+at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
+at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
+at com.example.dogglers.GridListTests.vertical_scrolling(GridListTests.kt:61)
+... 29 trimmed
+Caused by: junit.framework.AssertionFailedError: '(view has effective visibility &lt;VISIBLE&gt; and view.getGlobalVisibleRect() to return non-empty rectangle)' doesn't match the selected view.
+Expected: (view has effective visibility &lt;VISIBLE&gt; and view.getGlobalVisibleRect() to return non-empty rectangle)
+Got: view.getGlobalVisibleRect() returned empty rectangle
+View Details: MaterialTextView{id=2131230886, res-name=dog_name_textview, visibility=VISIBLE, width=183, height=132, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@9c256c4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=679.0, text=Bella, input-type=0, ime-target=false, has-links=false}
+
+at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)
+at androidx.test.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:11)
+at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)
+at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
+at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at android.os.Handler.handleCallback(Handler.java:942)
+at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loopOnce(Looper.java:226)
+at android.os.Looper.loop(Looper.java:313)
+at android.app.ActivityThread.main(ActivityThread.java:8757)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1067)</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>SM-S908U - 13</th>
+</tr>
+</thead>
+<tr>
+<td>grid_list_content_at_first_position</td>
+<td class="success">passed (0.486s)</td>
+</tr>
+<tr>
+<td>grid_list_content_at_last_position</td>
+<td class="success">passed (0.686s)</td>
+</tr>
+<tr>
+<td>grid_list_content_on_first_page</td>
+<td class="success">passed (0.690s)</td>
+</tr>
+<tr>
+<td>recycler_view_item_count</td>
+<td class="success">passed (0.596s)</td>
+</tr>
+<tr>
+<td>vertical_scrolling</td>
+<td class="failures">failed (0.600s)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4.2</a> at May 18, 2023, 12:47:15 AM</p>
+</div>
+</div>
+</body>
